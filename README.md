@@ -29,10 +29,14 @@ Edit
 ```bash
 # 1. 패키지 설치
 npm install
+yarn install
+pnpm install
 
 
 # 2. 개발 서버 실행
 npm run dev
+yarn run dev
+pnpm run dev
 🛠 사용 예시
 plaintext
 Copy
