@@ -1,39 +1,64 @@
-# json-maker-wijmo
+# 🧰 json-maker-wijmo
 
-This template should help get you started developing with Vue 3 in Vite.
+Wijmo Grid용 Vue 컴포넌트를 시각적으로 빠르게 생성할 수 있는 **GUI 기반 스캐폴딩 툴**입니다.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## ✨ 주요 기능
 
-## Type Support for `.vue` Imports in TS
+- ✅ 줄바꿈/콤마로 구분된 컬럼명 입력
+- ✅ camelCase 자동 변환 기능
+- ✅ 컬럼별 속성 설정 (데이터 타입, 너비, 읽기 전용, 헤더)
+- ✅ 실시간 Vue 파일 미리보기 (Notion 스타일 사이드 패널)
+- ✅ 복사 및 `.vue` 다운로드 기능 제공
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+---
 
-## Customize configuration
+## 📂 프로젝트 구조
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+src/ ├── components/ │ ├── EditorView.vue # 입력 및 컬럼 속성 설정 UI │ └── VueCodeDrawer.vue # Vue 코드 미리보기 + 다운로드 패널 ├── utils/ │ └── generateGridCode.ts # JSON → Vue 코드 변환 + 유틸 함수
 
-## Project Setup
+yaml
+Copy
+Edit
 
-```sh
+---
+
+## 🚀 실행 방법
+
+```bash
+# 1. 패키지 설치
 npm install
-```
 
-### Compile and Hot-Reload for Development
 
-```sh
+# 2. 개발 서버 실행
 npm run dev
-```
+🛠 사용 예시
+plaintext
+Copy
+Edit
+입력:
+product_name, price
+stock_quantity
 
-### Type-Check, Compile and Minify for Production
+→ 🪄 camelCase 변환 클릭 →
+productName, price, stockQuantity
 
-```sh
-npm run build
-```
+→ 각 컬럼 옵션 설정 (타입, 읽기 전용, width 등)
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+→ 📄 Vue 파일 생성 →
+  → 미리보기, 복사, 다운로드 가능
+🧱 기술 스택
+Vue 3 + Composition API (<script setup>)
 
-```sh
-npm run test:unit
+Vite
+
+Tailwind CSS v4
+
+TypeScript
+
+Wijmo Vue2 Grid
+
+📄 라이선스
+MIT
 ```
