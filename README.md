@@ -16,14 +16,15 @@ Wijmo Grid용 Vue 컴포넌트를 시각적으로 빠르게 생성할 수 있는
 
 ## 📂 프로젝트 구조
 
-src/ ├── components/ │ ├── EditorView.vue # 입력 및 컬럼 속성 설정 UI │ └── VueCodeDrawer.vue # Vue 코드 미리보기 + 다운로드 패널 ├── utils/ │ └── generateGridCode.ts # JSON → Vue 코드 변환 + 유틸 함수
-
-yaml
-Copy
-Edit
-
----
-
+src/  
+├── views/ │   
+├── EditorView.vue # 입력 및 컬럼 속성 설정 UI  
+│ └── VueCodeDrawer.vue # Vue 코드 미리보기 + 다운로드 패널   
+├── utils/   
+│ └── generateGridCode.ts # JSON → Vue 코드 변환 + 유틸 함수  
+  
+---  
+  
 ## 🚀 실행 방법
 
 ```bash
@@ -38,9 +39,7 @@ npm run dev
 yarn run dev
 pnpm run dev
 🛠 사용 예시
-plaintext
-Copy
-Edit
+
 입력:
 product_name, price
 stock_quantity
