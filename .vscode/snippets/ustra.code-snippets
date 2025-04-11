@@ -1,0 +1,12 @@
+{
+  "model block": {
+    "prefix": "model",
+    "body": ["model {", "  $1 text", "}"],
+    "description": "Insert a model block",
+  },
+  "field line": {
+    "prefix": "field",
+    "body": ["${1:fieldName} ${2|text,number,boolean,date|}"],
+    "description": "Insert a field line",
+  },
+}

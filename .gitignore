@@ -6,7 +6,6 @@ dist/
 
 # Editor
 .idea/
-.vscode/
 *.suo
 *.ntvs*
 *.njsproj
