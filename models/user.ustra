@@ -1,0 +1,5 @@
+model {
+  id number
+  name text
+  isActive boolean
+}

@@ -63,15 +63,21 @@
       </div>
     </div>
 
+    <!-- ✅ Vue 파일 생성 슬라이드 -->
     <VueCodeDrawer :show="showDrawer" :columns="columns" @close="showDrawer = false" />
+
+    <!-- ✅ Wijmo 미리보기 추가 -->
+    <WijmoPreview v-if="columns.length" :columns="columns" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, watch } from 'vue'
+import '@grapecity/wijmo.vue2.grid'
 import type { ColumnItem } from '@/utils/generateGridCode'
 import { toCamelCase, capitalizeFirst } from '@/utils/generateGridCode'
 import VueCodeDrawer from './VueCodeDrawer.vue'
+import WijmoPreview from './WijmoPreview.vue'
 
 const rawInput = ref('')
 const showDrawer = ref(false)

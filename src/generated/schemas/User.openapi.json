@@ -1,0 +1,12 @@
+{
+  "title": "User",
+  "type": "object",
+  "properties": {
+    "id number
+  name text
+  isActive boolean": { "type": "string" }
+  },
+  "required": ["id number
+  name text
+  isActive boolean"]
+}
